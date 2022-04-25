@@ -29,8 +29,8 @@ function win(userChoice, computerChoice) {
     result_p.innerHTML = `${convertToWord(userChoice)} beats ${convertToWord(computerChoice)}. You WIN!`;
     document.getElementById(userChoice).classList.add('green-glow');
     document.getElementById(computerChoice).classList.add('red-glow');
-    setTimeout(function () { document.getElementById(userChoice).classList.remove('green-glow') }, 1000);
-    setTimeout(function () { document.getElementById(computerChoice).classList.remove('red-glow') }, 1000);
+    setTimeout(function () { document.getElementById(userChoice).classList.remove('green-glow') }, 300);
+    setTimeout(function () { document.getElementById(computerChoice).classList.remove('red-glow') }, 300);
 }
 
 function lose(userChoice, computerChoice) {
@@ -41,8 +41,8 @@ function lose(userChoice, computerChoice) {
         ${convertToWord(userChoice)}. You LOSE!`;
     document.getElementById(userChoice).classList.add('red-glow');
     document.getElementById(computerChoice).classList.add('green-glow');
-    setTimeout(function () { document.getElementById(userChoice).classList.remove('red-glow') }, 1000);
-    setTimeout(function () { document.getElementById(computerChoice).classList.remove('green-glow') }, 1000);
+    setTimeout(function () { document.getElementById(userChoice).classList.remove('red-glow') }, 300);
+    setTimeout(function () { document.getElementById(computerChoice).classList.remove('green-glow') }, 300);
 }
 
 function draw(userChoice, computerChoice) {
@@ -51,7 +51,7 @@ function draw(userChoice, computerChoice) {
 
     document.getElementById(userChoice).classList.add('orange-glow');
 
-    setTimeout(function () { document.getElementById(userChoice).classList.remove('orange-glow') }, 1000);
+    setTimeout(function () { document.getElementById(userChoice).classList.remove('orange-glow') }, 300);
 }
 
 function game(userChoice) {
